@@ -24,14 +24,14 @@ try:
         EC.presence_of_element_located((By.ID, 'USER_ID'))
     )
     user_id = driver.find_element(By.ID, 'USER_ID')
-    user_id.send_keys("C421066")  # replace with your Hongik ID
+    user_id.send_keys("USER_ID")  # replace with your Hongik ID
 
     #pw
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'PASSWD'))
     )
     user_pw = driver.find_element(By.ID, 'PASSWD')
-    user_pw.send_keys("junsujunsu!045") # replace with your Hongik password
+    user_pw.send_keys("USER_PW") # replace with your Hongik password
 
     #login button
     element = WebDriverWait(driver, 10).until(
@@ -85,7 +85,6 @@ try:
                         None
             registration_check = driver.find_element(By.ID,"btn_insert")
             registration_check.click()
-            registration_button = 0
             break
 
 
